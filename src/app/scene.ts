@@ -25,10 +25,10 @@ export class Scene {
 onBeforeRender(event: NgtBeforeRenderEvent<THREE.Mesh>) {
         event.object.rotation.x += 0.01;
    
-throw new Error('Method not implemented.');
+//throw new Error('Method not implemented.');
 }
   readonly model$ = injectNgtLoader(
     () => GLTFLoader,
-    '../assets/vitesse_sphere_2.glb'
+    'assets/vitesse_sphere_2.glb'
   ).pipe(map((model) => model.scene));
 }
